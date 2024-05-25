@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./Main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="part0">
+        <form id="myform" action="">
+            <label for="quantity" id="enter">Enter Number of Players (between 1 and 4):</label>
+            <input type="number" id="myinput" name="quantity" min="2" max="4" value="" />
+        </form>
+        <button id="start" type="button">Start</button>
+    </div>
+
+    <div class="gameContainer" style="visibility: hidden;">
+
+        <div class="part1">
+            <div class="playerContainer" id="playerContainer1" style="visibility: hidden;">
+                <div class="cardsContainer handCards1" id="handCards1">
+                    <!--  <div id="c1-p1" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">1</div>
+            <div id="c2-p1" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">2</div>
+            <div id="c3-p1" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">3</div>
+            <div id="c4-p1" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">4</div>
+            <div id="c5-p1" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">5</div>
+            <div id="c6-p1" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">6</div>
+      -->
+                </div>
+
+                <div class="profileContainer" id="profile1">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/330px-SpongeBob_SquarePants_character.svg.png"
+                        class="profile" id="img1" alt="">
+                </div>
+
+                <div class="prisonContainer" id="prison1">
+
+                    <!--   <div id="cp1-p1" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">1</div>
+            <div id="cp2-p1" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">2</div>
+            <div id="cp3-p1" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">3</div>
+            <div id="cp4-p1" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">4</div>
+ -->
+
+
+                </div>
+
+               <!--  <div class="btnContainer">
+                    <button class="btn" id="next1" type="submit">next1 </button>
+                </div> -->
+
+
+
+            </div>
+
+            <div class="playerContainer" id="playerContainer4" style="visibility: hidden;">
+                <div class="cardsContainer handCards4" id="handCards4">
+                    <!--   <div id="c1-p4" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">1</div>
+        <div id="c2-p4" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">2</div>
+        <div id="c3-p4" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">3</div>
+        <div id="c4-p4" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">4</div>
+        <div id="c5-p4" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">5</div>
+        <div id="c6-p4" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">6</div>
+ -->
+                </div>
+
+                <div class="profileContainer" id="profile4">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/330px-SpongeBob_SquarePants_character.svg.png"
+                        class="profile" id="img4" alt="">
+                </div>
+
+                <div class="prisonContainer" id="prison4">
+
+                    <!--     <div id="cp1-p4" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">1</div>
+        <div id="cp2-p4" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">2</div>
+        <div id="cp3-p4" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">3</div>
+        <div id="cp4-p4" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">4</div>
+
+ -->
+
+                </div>
+
+               <!--  <div class="btnContainer">
+                    <button class="btn" id="next4" type="submit">next4 </button>
+                </div> -->
+
+
+
+            </div>
+
+        </div>
+
+        <div class="part2" style="visibility: hidden;">
+            <div class="migTaula">
+                <div class="baralla"></div>
+                <div class="migCard" id="migCard" draggable="false">
+
+                </div>
+
+                <div class="migCard" id="cardChasseur" draggable="false">
+hey
+                </div>
+
+            </div>
+
+            <div class="btnGive">
+                <button id="give">give</button>
+            </div>
+            <div class="btnContainer">
+                <button class="btn" id="next1" type="submit">next1 </button>
+            </div>
+        </div>
+
+
+        <div class="part3">
+
+
+
+            <div class="playerContainer" id="playerContainer3" style="visibility: hidden;">
+                <div class="cardsContainer handCards3" id="handCards3">
+                    <!--    <div id="c1-p3" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">1</div>
+            <div id="c2-p3" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">2</div>
+            <div id="c3-p3" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">3</div>
+            <div id="c4-p3" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">4</div>
+            <div id="c5-p3" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">5</div>
+            <div id="c6-p3" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">6</div>
+       -->
+                </div>
+
+                <div class="profileContainer" id="profile3">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/330px-SpongeBob_SquarePants_character.svg.png"
+                        class="profile" id="img3" alt="">
+                </div>
+
+                <div class="prisonContainer" id="prison3">
+
+                    <!--  <div id="cp1-p3" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">1</div>
+            <div id="cp2-p3" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">2</div>
+            <div id="cp3-p3" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">3</div>
+            <div id="cp4-p3" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">4</div>
+
+ -->
+
+                </div>
+
+               <!--  <div class="btnContainer">
+                    <button class="btn" id="next3" type="submit">next 3</button>
+                </div> -->
+
+
+
+            </div>
+
+
+
+
+            <div class="playerContainer" id="playerContainer2" style="visibility: hidden;">
+                <div class="cardsContainer handCards2 " id="handCards2">
+                    <!--   <div id="c1-p2" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">1</div>
+        <div id="c2-p2" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">2</div>
+        <div id="c3-p2" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">3</div>
+        <div id="c4-p2" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">4</div>
+        <div id="c5-p2" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">5</div>
+        <div id="c6-p2" data-value1="" data-value2="" data-colour="red" class="card red" draggable="true">6</div>
+  -->
+                </div>
+
+                <div class="profileContainer" id="profile2">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/330px-SpongeBob_SquarePants_character.svg.png"
+                        class="profile" id="img2" alt="">
+                </div>
+
+                <div class="prisonContainer" id="prison2">
+                    <!-- 
+        <div id="cp1-p2" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">1</div>
+        <div id="cp2-p2" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">2</div>
+        <div id="cp3-p2" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">3</div>
+        <div id="cp4-p2" data-value="1" data-colour="red" class="card cardPrison red" draggable="true">4</div>
+
+
+ -->
+                </div>
+
+               <!--  <div class="btnContainer">
+                    <button class="btn" id="next2" type="submit">next2 </button>
+                </div>
+ -->
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

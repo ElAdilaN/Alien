@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    -webkit-user-select: text; /* Safari */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE 10+ */
+    user-select: text; /* Standard syntax */
+}
+
+.migCard{
+    border: solid 2px black ;
+}
+
+
+div{
+   /*  border: 1px solid black;
+    */ margin: 5px;
+}
+
+.gameContainer{
+    display: flex;
+    background-color: yellow;
+
+}
+
+.cardPrison{
+    width: 40px !important;
+    height: 60px !important;
+}
+
+.part1{
+    width: 41%;
+    height: 95vh;
+}
+.part2{
+    width: 16%;
+}
+.part3{
+    width: 41%;
+}
+
+
+.playerContainer{
+    background-color: green;
+    height: 48%;
+    position: relative;
+
+}
+
+.cardsContainer{
+    background-color: blue;
+    display: flex;
+}
+
+.prisonContainer{
+    background-color: aqua;
+    display: flex;
+}
+
+.card{
+    border: 1px solid black;
+    width: 70px;
+    height: 90px;
+    display: flex;
+
+}
+
+.profile{
+
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%; 
+}
